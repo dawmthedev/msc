@@ -1,16 +1,20 @@
 # mintair.co Lead Generation Website
 
 ## Project Overview
+
 This repository contains the code for mintair.co's HVAC lead generation website, specifically designed for California homeowners. Our platform provides valuable, SEO-optimized content about HVAC systems, maintenance, and energy efficiency.
 
 ## Target Audience
+
 - California homeowners
 - Property managers
 - Home improvement enthusiasts
 - Energy efficiency conscious consumers
 
 ## SEO Best Practices
+
 ### Technical SEO
+
 - Semantic HTML5 structure
 - Mobile-first responsive design using Tailwind CSS
 - Optimized meta tags and title structures
@@ -21,6 +25,7 @@ This repository contains the code for mintair.co's HVAC lead generation website,
 - SSL/HTTPS implementation
 
 ### On-Page SEO
+
 - Keyword-optimized content focusing on California HVAC terms
 - Meta descriptions for all pages
 - Proper heading hierarchy (H1-H6)
@@ -30,12 +35,15 @@ This repository contains the code for mintair.co's HVAC lead generation website,
 - Local SEO implementation
 
 ### Social Media Integration
+
 - Open Graph tags for Facebook sharing
 - Twitter Card markup
 - LinkedIn post optimization
 
 ## Content Strategy
+
 ### Blog Post Schedule
+
 - Weekly blog posts focusing on:
   - Seasonal HVAC maintenance tips
   - Energy efficiency improvements
@@ -45,6 +53,7 @@ This repository contains the code for mintair.co's HVAC lead generation website,
   - New technology and trends
 
 ### Content Guidelines
+
 - Minimum 1,500 words per blog post
 - Include relevant statistics and sources
 - Use descriptive headers and subheaders
@@ -53,13 +62,16 @@ This repository contains the code for mintair.co's HVAC lead generation website,
 - Use images with proper optimization
 
 ## Site Management
+
 ### Branch Strategy
+
 - `main`: Production-ready code
 - `develop`: Integration branch for features
 - `feature/*`: Individual feature branches
 - `hotfix/*`: Emergency fixes for production
 
 ### Pull Request Process
+
 1. Create feature branch from `develop`
 2. Implement changes and test locally
 3. Submit PR with detailed description
@@ -68,6 +80,7 @@ This repository contains the code for mintair.co's HVAC lead generation website,
 6. Merge after approval
 
 ### Issue Tracking
+
 - Use GitHub Issues for:
   - Content requests
   - Bug reports
@@ -76,6 +89,7 @@ This repository contains the code for mintair.co's HVAC lead generation website,
   - Performance optimizations
 
 ## Getting Started
+
 ```bash
 # Clone the repository
 git clone https://github.com/dawmthedev/mintair-leadgen-site.git
@@ -88,6 +102,7 @@ npm run dev
 ```
 
 ## Tech Stack
+
 - React (Create React App)
 - Tailwind CSS
 - React Router
