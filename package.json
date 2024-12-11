@@ -1,11 +1,11 @@
 {
   "name": "mintairco",
   "version": "1.0.0",
-  "homepage": "https://dawmthedev.github.io/mintair-leadgen-site",
+  "homepage": "https://mintair.co",
   "scripts": {
     "clean": "rm -rf node_modules/.cache/gh-pages",
     "predeploy": "npm run build",
-    "deploy": "npm run clean && gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
