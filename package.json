@@ -1,11 +1,11 @@
 {
-  "name": "example",
+  "name": "mintairco",
   "version": "1.0.0",
-  "description": "This is an example JSON file.",
   "homepage": "https://dawmthedev.github.io/mintair-leadgen-site",
   "scripts": {
+    "clean": "rm -rf node_modules/.cache/gh-pages",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npm run clean && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
@@ -33,6 +33,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^6.2.0"
   }
 }
