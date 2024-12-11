@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "This is an example JSON file.",
   "scripts": {
-    "dev": "react-scripts start"
+    "dev": "react-scripts start",
+    "build": "react-scripts build"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.9",
@@ -27,5 +28,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
