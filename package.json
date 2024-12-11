@@ -2,8 +2,11 @@
   "name": "example",
   "version": "1.0.0",
   "description": "This is an example JSON file.",
+  "homepage": "https://dawmthedev.github.io/mintair-leadgen-site",
   "scripts": {
-    "dev": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "build": "react-scripts build"
   },
   "dependencies": {
