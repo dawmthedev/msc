@@ -68,8 +68,8 @@ export default function Header() {
                 to={path}
                 className={`text-sm font-medium transition-colors ${
                   location.pathname === path
-                    ? "text-blue-600"
-                    : "text-gray-600 hover:text-blue-600"
+                    ? "text-primary-600"
+                    : "text-gray-600 hover:text-primary-600"
                 }`}
               >
                 {title}
@@ -77,7 +77,7 @@ export default function Header() {
             ))}
             <Link
               to="/contact"
-              className="rounded-full bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-blue-500 transition-all"
+              className="rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-primary transition-all"
             >
               Contact
             </Link>
@@ -97,8 +97,8 @@ export default function Header() {
               onClick={() => setIsMobileMenuOpen(false)}
               className={`block text-base font-medium transition-colors ${
                 location.pathname === path
-                  ? "text-blue-600"
-                  : "text-gray-600 hover:text-blue-600"
+                  ? "text-primary-600"
+                  : "text-gray-600 hover:text-primary-600"
               }`}
             >
               {title}
@@ -107,7 +107,7 @@ export default function Header() {
           <Link
             to="/contact"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block w-full text-center rounded-full bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-blue-500 transition-all"
+            className="block w-full text-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-primary transition-all"
           >
             Contact
           </Link>

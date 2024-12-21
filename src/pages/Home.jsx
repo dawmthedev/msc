@@ -37,7 +37,7 @@ export default function Home() {
         <div className="relative isolate">
           <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
-              <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-8 bg-clip-text text-transparent bg-gradient-to-b from-blue-600 to-[#1D354C]">
+              <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-8 bg-clip-text text-transparent bg-gradient-to-b from-primary to-[#1D354C]">
                 Expert HVAC Solutions for California Homes
               </h1>
               <p className="text-lg leading-8 text-gray-600 mb-12">
@@ -48,7 +48,7 @@ export default function Home() {
               <div className="flex gap-x-6 justify-center">
                 <Link
                   to="/contact"
-                  className="rounded-md bg-blue-600 px-3 py-1.5 text-base font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 transition-all"
+                  className="rounded-md bg-primary px-3 py-1.5 text-base font-semibold text-white shadow-sm hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all"
                 >
                   Get a Free Quote
                 </Link>
@@ -72,9 +72,9 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                 <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
                   <div className="text-center">
-                    <div className="inline-block p-3 rounded-full bg-blue-50 mb-4">
+                    <div className="inline-block p-3 rounded-full bg-primary/10 mb-4">
                       <svg
-                        className="w-8 h-8 text-blue-600"
+                        className="w-8 h-8 text-primary"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -97,9 +97,9 @@ export default function Home() {
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
                   <div className="text-center">
-                    <div className="inline-block p-3 rounded-full bg-blue-50 mb-4">
+                    <div className="inline-block p-3 rounded-full bg-primary/10 mb-4">
                       <svg
-                        className="w-8 h-8 text-blue-600"
+                        className="w-8 h-8 text-primary"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -120,9 +120,9 @@ export default function Home() {
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
                   <div className="text-center">
-                    <div className="inline-block p-3 rounded-full bg-blue-50 mb-4">
+                    <div className="inline-block p-3 rounded-full bg-primary/10 mb-4">
                       <svg
-                        className="w-8 h-8 text-blue-600"
+                        className="w-8 h-8 text-primary"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -182,7 +182,7 @@ export default function Home() {
                   href="https://www.google.com/search?gs_ssp=eJzj4tVP1zc0LKosMY5PSTIzYLRSMahITDFINUpNTDU0NDY0trBIsTKoSDVPTTa3MDI2MjJKtTAy8BIpy88pScxMVkjOzysuKSpNLsnMzwMAOIAXMQ&q=voltaic+construction&oq=votlaicconstrct&gs_lcrp=EgZjaHJvbWUqDwgBEC4YDRivARjHARiABDIGCAAQRRg5Mg8IARAuGA0YrwEYxwEYgAQyCQgCEAAYDRiABDIJCAMQABgNGIAEMgkIBBAAGA0YgAQyCAgFEAAYDRgeMggIBhAAGA0YHjIKCAcQABgIGA0YHjIKCAgQABgIGA0YHtIBCDMzODFqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#mpd=~16398593950503221256/customers/reviews"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block rounded-md bg-blue-600 px-3 py-1.5 text-base font-semibold text-white hover:bg-blue-500 transition-all"
+                  className="inline-block rounded-md bg-primary px-3 py-1.5 text-base font-semibold text-white hover:bg-primary/90 transition-all"
                 >
                   See More Reviews
                 </a>
