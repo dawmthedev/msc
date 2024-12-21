@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { Toaster, toast } from "react-hot-toast";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -8,43 +9,40 @@ export default function Contact() {
     message: "",
   });
 
-  useEffect(() => {
-    console.log(
-      "API URL:",
-      "https://your-vercel-deployment-url.vercel.app/api/contact"
-    ); // Add this line to check the value
-  }, []);
+  const API_URL =
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3001/api/contact"
+      : "https://your-vercel-deployment-url.vercel.app/api/contact";
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        toast.success("Message sent successfully!");
+        setFormData({ firstName: "", lastName: "", email: "", message: "" });
+      } else {
+        toast.error("Failed to send message.");
+      }
+    } catch (error) {
+      toast.error("An error occurred. Please try again.");
+    }
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await fetch(
-        "https://your-vercel-deployment-url.vercel.app/api/contact",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
-      if (response.ok) {
-        alert("Message sent successfully!");
-      } else {
-        alert("Failed to send message.");
-      }
-    } catch (error) {
-      alert("An error occurred. Please try again.");
-    }
-  };
-
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+      <Toaster position="top-center" />
       <div className="mx-auto max-w-2xl text-center">
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Contact Us
