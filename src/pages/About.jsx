@@ -51,23 +51,78 @@ export default function About() {
       {/* Certifications */}
       <div className="bg-gray-50 py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900">
+          <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900 mb-10">
             Licensed & Certified
           </h2>
-          <div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-3">
-            {[
-              { name: "EPA Certified", image: "/images/epa-certified.svg" },
-              { name: "NATE Certified", image: "/images/nate-certified.svg" },
-              { name: "Energy Star Partner", image: "/images/energy-star.svg" },
-            ].map((cert) => (
-              <div key={cert.name} className="flex items-center justify-center">
-                <img
-                  className="h-16 object-contain"
-                  src={cert.image}
-                  alt={cert.name}
-                />
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+              <div className="text-center">
+                <div className="inline-block p-3 rounded-full bg-blue-50 mb-4">
+                  <svg
+                    className="w-8 h-8 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">
+                  B - General Building
+                </h3>
+                <p className="text-gray-600">
+                  General Building Contractor License
+                </p>
               </div>
-            ))}
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+              <div className="text-center">
+                <div className="inline-block p-3 rounded-full bg-blue-50 mb-4">
+                  <svg
+                    className="w-8 h-8 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">C10 - Electrical</h3>
+                <p className="text-gray-600">Electrical License</p>
+              </div>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+              <div className="text-center">
+                <div className="inline-block p-3 rounded-full bg-blue-50 mb-4">
+                  <svg
+                    className="w-8 h-8 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M13 10V3L4 14h7v7l9-11h-7z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="text-lg font-semibold mb-2">C20 - HVAC</h3>
+                <p className="text-gray-600">HVAC License</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -87,36 +142,67 @@ export default function About() {
               </p>
               <ul className="mt-8 grid grid-cols-2 gap-4">
                 {[
-                  "Los Angeles County",
-                  "Orange County",
-                  "San Diego County",
-                  "Riverside County",
-                  "San Bernardino County",
-                  "Ventura County",
-                ].map((area) => (
-                  <li key={area} className="flex items-center">
-                    <svg
-                      className="h-5 w-5 text-blue-600"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span className="ml-2 text-gray-600">{area}</span>
+                  { area: "Los Angeles County", icon: "🌴" },
+                  { area: "Orange County", icon: "🍊" },
+                  { area: "San Diego County", icon: "🏖️" },
+                  { area: "Riverside County", icon: "🌅" },
+                  { area: "San Bernardino County", icon: "🏔️" },
+                  { area: "Ventura County", icon: "🌊" },
+                ].map(({ area, icon }) => (
+                  <li
+                    key={area}
+                    className="flex items-center bg-blue-50 p-3 rounded-lg hover:bg-blue-100 transition-colors"
+                  >
+                    <span className="text-xl mr-2">{icon}</span>
+                    <span className="text-gray-600 font-medium">{area}</span>
                   </li>
                 ))}
               </ul>
             </div>
             <div className="relative">
-              <img
-                className="rounded-2xl object-cover"
-                src="https://source.unsplash.com/random/800x600/?california-map"
-                alt="Service area map"
-              />
+              <div className="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 shadow-lg">
+                <svg
+                  viewBox="0 0 400 300"
+                  className="w-full h-full"
+                  style={{ padding: "20px" }}
+                >
+                  {/* Simplified SoCal shape */}
+                  <path
+                    d="M50,50 L350,50 L350,250 L50,250 Z"
+                    fill="#fff"
+                    stroke="#2563eb"
+                    strokeWidth="3"
+                  />
+                  {/* County markers */}
+                  <circle cx="150" cy="100" r="10" fill="#2563eb" />
+                  <text x="170" y="105" className="text-sm" fill="#1e40af">
+                    Los Angeles
+                  </text>
+
+                  <circle cx="180" cy="150" r="10" fill="#2563eb" />
+                  <text x="200" y="155" className="text-sm" fill="#1e40af">
+                    Orange County
+                  </text>
+
+                  <circle cx="200" cy="200" r="10" fill="#2563eb" />
+                  <text x="220" y="205" className="text-sm" fill="#1e40af">
+                    San Diego
+                  </text>
+
+                  {/* Pacific Ocean */}
+                  <text
+                    x="60"
+                    y="280"
+                    className="text-lg font-bold"
+                    fill="#2563eb"
+                  >
+                    Pacific Ocean 🌊
+                  </text>
+                </svg>
+              </div>
+              <div className="absolute -right-6 -top-6 bg-blue-600 text-white p-3 rounded-full shadow-lg">
+                <span className="text-2xl">🚀</span>
+              </div>
             </div>
           </div>
         </div>

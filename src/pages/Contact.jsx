@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
 
 export default function Contact() {
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
-        <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Us</h1>
+        <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Contact Us
+        </h1>
         <p className="mt-2 text-lg leading-8 text-gray-600">
           Get in touch with our HVAC experts for a consultation.
         </p>
@@ -12,7 +14,10 @@ export default function Contact() {
       <form className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
-            <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="first-name"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               First name
             </label>
             <div className="mt-2.5">
@@ -26,7 +31,10 @@ export default function Contact() {
             </div>
           </div>
           <div>
-            <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="last-name"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               Last name
             </label>
             <div className="mt-2.5">
@@ -40,7 +48,10 @@ export default function Contact() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="email"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               Email
             </label>
             <div className="mt-2.5">
@@ -54,7 +65,10 @@ export default function Contact() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+            <label
+              htmlFor="message"
+              className="block text-sm font-semibold leading-6 text-gray-900"
+            >
               Message
             </label>
             <div className="mt-2.5">

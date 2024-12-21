@@ -29,8 +29,12 @@ export default function Header() {
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex w-full items-center justify-between py-4 sm:py-6">
-          <Link to="/" className="text-xl sm:text-2xl font-bold gradient-text">
-            mintair.co
+          <Link to="/" className="text-xl sm:text-2xl font-bold">
+            <img
+              src="/assets/logo.png"
+              alt="Mintair Logo"
+              className="h-10 sm:h-12"
+            />
           </Link>
 
           {/* Hamburger Menu Button */}
