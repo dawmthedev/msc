@@ -1,6 +1,48 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
+
+  useEffect(() => {
+    console.log(
+      "API URL:",
+      "https://your-vercel-deployment-url.vercel.app/api/contact"
+    ); // Add this line to check the value
+  }, []);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(
+        "https://your-vercel-deployment-url.vercel.app/api/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+      if (response.ok) {
+        alert("Message sent successfully!");
+      } else {
+        alert("Failed to send message.");
+      }
+    } catch (error) {
+      alert("An error occurred. Please try again.");
+    }
+  };
+
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
@@ -11,7 +53,7 @@ export default function Contact() {
           Get in touch with our HVAC experts for a consultation.
         </p>
       </div>
-      <form className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label
@@ -23,9 +65,11 @@ export default function Contact() {
             <div className="mt-2.5">
               <input
                 type="text"
-                name="first-name"
+                name="firstName"
                 id="first-name"
                 autoComplete="given-name"
+                value={formData.firstName}
+                onChange={handleChange}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -40,9 +84,11 @@ export default function Contact() {
             <div className="mt-2.5">
               <input
                 type="text"
-                name="last-name"
+                name="lastName"
                 id="last-name"
                 autoComplete="family-name"
+                value={formData.lastName}
+                onChange={handleChange}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -60,6 +106,8 @@ export default function Contact() {
                 name="email"
                 id="email"
                 autoComplete="email"
+                value={formData.email}
+                onChange={handleChange}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -76,6 +124,8 @@ export default function Contact() {
                 name="message"
                 id="message"
                 rows={4}
+                value={formData.message}
+                onChange={handleChange}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
               />
             </div>
