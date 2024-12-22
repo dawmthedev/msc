@@ -15,10 +15,11 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Navigation Links
   const navLinks = [
-    ["Home", "/"],
-    ["About", "/about"],
-    ["Blog", "/blog"],
+    ["About us", "/about"],
+    ["Leasing Solutions", "/solutions"],
+    ["Services", "/services"],
   ];
 
   return (
@@ -29,15 +30,16 @@ export default function Header() {
     >
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex w-full items-center justify-between py-4 sm:py-6">
+          {/* Logo / Brand */}
           <Link to="/" className="text-xl sm:text-2xl font-bold">
             <img
-              src="/assets/logo.png"
-              alt="Mintair Logo"
+              src="/assets/logo.webp"
+              alt="MetaSwap Capital Logo"
               className="h-10 sm:h-12"
             />
           </Link>
 
-          {/* Hamburger Menu Button */}
+          {/* Mobile Menu Toggle */}
           <button
             className="lg:hidden p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -75,11 +77,13 @@ export default function Header() {
                 {title}
               </Link>
             ))}
+
+            {/* BTC Orange Button (Shop) */}
             <Link
               to="/contact"
               className="rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-primary transition-all"
             >
-              Contact
+              Contact Us
             </Link>
           </div>
         </div>
@@ -105,11 +109,11 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            to="/contact"
+            to="/shop"
             onClick={() => setIsMobileMenuOpen(false)}
             className="block w-full text-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-primary transition-all"
           >
-            Contact
+            Shop
           </Link>
         </div>
       </nav>

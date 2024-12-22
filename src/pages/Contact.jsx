@@ -48,7 +48,8 @@ export default function Contact() {
           Contact Us
         </h1>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          Get in touch with our HVAC experts for a consultation.
+          Start your journey with MetaSwap Capital and discover how our Bitcoin
+          ATM solutions can power new revenue for your business.
         </p>
       </div>
       <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
@@ -68,7 +69,9 @@ export default function Contact() {
                 autoComplete="given-name"
                 value={formData.firstName}
                 onChange={handleChange}
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 
+              shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 
+              focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -87,7 +90,9 @@ export default function Contact() {
                 autoComplete="family-name"
                 value={formData.lastName}
                 onChange={handleChange}
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 
+              shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 
+              focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -106,7 +111,9 @@ export default function Contact() {
                 autoComplete="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 
+              shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 
+              focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -124,7 +131,9 @@ export default function Contact() {
                 rows={4}
                 value={formData.message}
                 onChange={handleChange}
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 
+              shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 
+              focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -132,9 +141,12 @@ export default function Contact() {
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            className="block w-full rounded-md bg-primary px-3.5 py-2.5 text-center 
+          text-sm font-semibold text-white shadow-sm hover:bg-primary 
+          focus-visible:outline focus-visible:outline-2 
+          focus-visible:outline-offset-2 focus-visible:outline-blue-600"
           >
-            Send message
+            Send Message
           </button>
         </div>
       </form>

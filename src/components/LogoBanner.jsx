@@ -56,18 +56,18 @@ const Gradient = styled.div`
 `;
 
 const logos = [
-  "https://api.iconify.design/mdi:thermostat.svg?color=%23000000", // Thermostat icon
-  "https://api.iconify.design/material-symbols:heat-pump.svg?color=%23000000", // Heat pump icon
-  "https://api.iconify.design/mdi:hvac.svg?color=%23000000", // HVAC icon
-  "https://api.iconify.design/carbon:temperature-hot.svg?color=%23000000", // Heating icon
-  "https://api.iconify.design/mdi:air-conditioner.svg?color=%23000000", // AC icon
-  "https://api.iconify.design/carbon:energy-renewable.svg?color=%23000000", // Energy efficiency
-  "https://api.iconify.design/healthicons:award-ribbon.svg?color=%23000000", // Quality/certification
-  "https://api.iconify.design/material-symbols:home.svg?color=%23000000", // Home comfort
-  "https://api.iconify.design/carbon:certificate.svg?color=%23000000", // Certification icon
-  "https://api.iconify.design/mdi:tools.svg?color=%23000000", // Service/repair icon
-  "https://api.iconify.design/mdi:shield-check.svg?color=%23000000", // Security and trust
-  "https://api.iconify.design/mdi:hand-heart.svg?color=%23000000", // Customer care and support
+  "https://api.iconify.design/cryptocurrency:btc.svg?color=%23000000", // Bitcoin logo
+  "https://api.iconify.design/mdi:atm.svg?color=%23000000", // ATM icon
+  "https://api.iconify.design/material-symbols:payments.svg?color=%23000000", // Payments
+  "https://api.iconify.design/mdi:bank.svg?color=%23000000", // Banking
+  "https://api.iconify.design/mdi:security.svg?color=%23000000", // Security
+  "https://api.iconify.design/mdi:cash-multiple.svg?color=%23000000", // Money/Investment
+  "https://api.iconify.design/mdi:handshake.svg?color=%23000000", // Partnership
+  "https://api.iconify.design/mdi:store.svg?color=%23000000", // Retail/Location
+  "https://api.iconify.design/mdi:chart-line.svg?color=%23000000", // Growth/Trading
+  "https://api.iconify.design/mdi:support.svg?color=%23000000", // Support
+  "https://api.iconify.design/mdi:shield-check.svg?color=%23000000", // Compliance
+  "https://api.iconify.design/mdi:account-group.svg?color=%23000000", // Community/Network
 ];
 const LogoBanner = () => {
   return (

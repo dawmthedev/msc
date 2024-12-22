@@ -36,27 +36,28 @@ export default function Home() {
       <div className="relative isolate">
         <div className="relative isolate">
           <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-            <div className="mx-auto max-w-2xl text-center">
-              <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-8 bg-clip-text text-transparent bg-gradient-to-b from-primary to-[#1D354C]">
-                Expert HVAC Solutions for California Homes
+            {/* /* /* /* /* Main Hero Here */}
+            <div className="mx-auto max-w-2xl text-center py-8 ">
+              <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-10 bg-clip-text text-transparent bg-gradient-to-b from-primary to-[#1D354C] leading-normal pb-1">
+                Empower Your Business with Profitable Bitcoin ATM Leasing ⚡️
+                <br />
               </h1>
-              <p className="text-lg leading-8 text-gray-600 mb-12">
-                Professional heating and cooling services that keep your home
-                comfortable year-round. Energy-efficient solutions tailored to
-                California's unique climate.
+              <p className="text-lg leading-8 text-gray-600 mb-14">
+                MetaSwap Capital simplifies crypto adoption, new revenue,
+                minimizes risk, and embrace the future of digital transactions.
               </p>
               <div className="flex gap-x-6 justify-center">
                 <Link
                   to="/contact"
-                  className="rounded-md bg-primary px-3 py-1.5 text-base font-semibold text-white shadow-sm hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all"
+                  className="rounded-md bg-primary px-4 py-2 text-base font-semibold text-white shadow-sm hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all"
                 >
-                  Get a Free Quote
+                  Get Started
                 </Link>
                 <Link
                   to="/services"
-                  className="rounded-md bg-white px-3 py-1.5 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 transition-all"
+                  className="rounded-md bg-white px-4 py-2 text-base font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 transition-all"
                 >
-                  Our Services
+                  Learn More
                 </Link>
               </div>
             </div>
@@ -67,9 +68,10 @@ export default function Home() {
             {/* 3 CERTIFICATIONS HERE */}
             <div className="mt-16">
               <h2 className="text-center text-2xl font-bold mb-8">
-                Licensed & Certified Excellence
+                Certified & Accredited Crypto Expertise
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                {/* Card 1 */}
                 <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
                   <div className="text-center">
                     <div className="inline-block p-3 rounded-full bg-primary/10 mb-4">
@@ -88,13 +90,16 @@ export default function Home() {
                       </svg>
                     </div>
                     <h3 className="text-lg font-semibold mb-2">
-                      B - General Building
+                      Equipment Leasing Certified
                     </h3>
                     <p className="text-gray-600">
-                      General Building Contractor License
+                      Recognized by industry authorities for delivering seamless
+                      and compliant lease services.
                     </p>
                   </div>
                 </div>
+
+                {/* Card 2 */}
                 <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
                   <div className="text-center">
                     <div className="inline-block p-3 rounded-full bg-primary/10 mb-4">
@@ -113,11 +118,16 @@ export default function Home() {
                       </svg>
                     </div>
                     <h3 className="text-lg font-semibold mb-2">
-                      C10 - Electrical
+                      Regulatory Compliance Focus
                     </h3>
-                    <p className="text-gray-600">Electrical License</p>
+                    <p className="text-gray-600">
+                      Adhering to strict KYC/AML standards, ensuring your BTM
+                      operations remain secure and trusted.
+                    </p>
                   </div>
                 </div>
+
+                {/* Card 3 */}
                 <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
                   <div className="text-center">
                     <div className="inline-block p-3 rounded-full bg-primary/10 mb-4">
@@ -135,14 +145,41 @@ export default function Home() {
                         />
                       </svg>
                     </div>
-                    <h3 className="text-lg font-semibold mb-2">C20 - HVAC</h3>
-                    <p className="text-gray-600">HVAC License</p>
+                    <h3 className="text-lg font-semibold mb-2">
+                      Crypto & Fintech Innovators
+                    </h3>
+                    <p className="text-gray-600">
+                      Awarded for our commitment to advancing BTM technology and
+                      driving results for our partners.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
+            {/* 3.  Banner TO GET STARTED with start.gif */}
+            <div className="bg-primary mt-16">
+              <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+                <div className="text-white max-w-2xl">
+                  <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">
+                    Ready to Start Your BTM Business?
+                  </h2>
+                  <p className="text-lg leading-8 text-gray-100">
+                    Join the digital currency revolution with our flexible
+                    leasing solutions.
+                  </p>
+                </div>
+                <div className="mt-8 md:mt-0">
+                  <Link
+                    to="/contact"
+                    className="rounded-md bg-white px-6 py-3 text-lg font-semibold text-primary shadow-sm hover:bg-gray-100 transition-all"
+                  >
+                    Get Started Today
+                  </Link>
+                </div>
+              </div>
+            </div>
             {/* Google reviews here , last 3 with (see more option and total review count) */}
-            <div className="mt-16">
+            {/* <div className="mt-16">
               <h2 className="text-center text-2xl font-bold mb-8">
                 What Our Customers Say
               </h2>
@@ -187,7 +224,7 @@ export default function Home() {
                   See More Reviews
                 </a>
               </div>
-            </div>
+            </div> */}
             {/* Final Call to action to forward to the contact page. Make this absolutely amazing.  */}
           </div>
         </div>
