@@ -29,25 +29,28 @@ export default function Footer() {
                   Services
                 </h3>
                 <ul className="mt-4 space-y-4">
-                  <li>
+                  {/* Products */}
+                  {/* <li>
                     <Link
                       to="/products"
                       className="text-base text-gray-500 hover:text-gray-900"
                     >
                       Products
                     </Link>
-                  </li>
-                  <li>
+                  </li> */}
+
+                  {/* Leasing & Financing */}
+                  {/* <li>
                     <Link
                       to="/leasing"
                       className="text-base text-gray-500 hover:text-gray-900"
                     >
                       Leasing & Financing
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
-                      to="/support"
+                      to="/contact"
                       className="text-base text-gray-500 hover:text-gray-900"
                     >
                       Maintenance & Support
@@ -62,22 +65,26 @@ export default function Footer() {
                   Resources
                 </h3>
                 <ul className="mt-4 space-y-4">
-                  <li>
+                  {/* Blog */}
+                  {/* <li>
                     <Link
                       to="/blog"
                       className="text-base text-gray-500 hover:text-gray-900"
                     >
                       Blog
                     </Link>
-                  </li>
-                  <li>
+                  </li> */}
+
+                  {/* FAQ TODO  */}
+
+                  {/* <li>
                     <Link
                       to="/faq"
                       className="text-base text-gray-500 hover:text-gray-900"
                     >
                       FAQ
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       to="/contact"
@@ -94,9 +101,9 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="mt-12 border-t border-gray-200 pt-8">
-          <p className="text-base text-gray-400 xl:text-center">
-            &copy; 2024 metaswapcapital.com. All rights reserved. | Powered by
-            Voltaic
+          <p className="text-sm text-gray-400 xl:text-center">
+            &copy; 2025 Metaswap Capital, Inc. All rights reserved. | Powered by
+            Metaswap™
           </p>
         </div>
       </div>

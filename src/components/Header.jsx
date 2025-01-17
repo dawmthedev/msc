@@ -18,7 +18,7 @@ export default function Header() {
   // Navigation Links
   const navLinks = [
     ["About us", "/about"],
-    ["Leasing Solutions", "/solutions"],
+    // ["Leasing Solutions", "/solutions"], TODO
     ["Services", "/services"],
   ];
 
@@ -109,11 +109,11 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            to="/shop"
+            to="/contact"
             onClick={() => setIsMobileMenuOpen(false)}
             className="block w-full text-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-primary transition-all"
           >
-            Shop
+            Contact us
           </Link>
         </div>
       </nav>

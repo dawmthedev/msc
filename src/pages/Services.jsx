@@ -67,16 +67,16 @@ export default function Services() {
 
   const reviews = [
     {
-      author: "Carlos M.",
+      author: "Carlos M. - SAMMI's Liquor Franchise",
       rating: 5,
       text: "Their leasing process was super straightforward. We’ve already seen a surge in foot traffic!",
-      date: "1 week ago",
+      date: "2 Months ago",
     },
     {
-      author: "Emily R.",
+      author: "Erik G. - Vintage Inspired Westwood LA",
       rating: 5,
       text: "Highly recommend! We love the fast customer support and clear compliance guidance.",
-      date: "2 days ago",
+      date: "3 weeks  ago",
     },
     // Add more reviews as needed...
   ];
@@ -101,7 +101,7 @@ export default function Services() {
       </div>
 
       {/* Orange Services Section */}
-      <div className="bg-white py-24 sm:py-32">
+      <div className="bg-white py-24 sm:py-0">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-4">
             {orangeServices.map((service) => (
@@ -172,7 +172,7 @@ export default function Services() {
               </dt>
               <dd className="mt-2 text-base leading-7 text-gray-600">
                 From initial approval to full deployment, our streamlined
-                process gets your ATMs up and running in record time.
+                process gets your BTMs up and running in record time.
               </dd>
             </div>
 
@@ -203,7 +203,7 @@ export default function Services() {
               </dt>
               <dd className="mt-2 text-base leading-7 text-gray-600">
                 From coast to coast, we cater to both small shop owners and
-                large corporate chains seeking the next frontier of revenue.
+                F500's seeking the next frontier of revenue.
               </dd>
             </div>
 
@@ -300,10 +300,6 @@ export default function Services() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Ready to Expand Your Crypto Footprint?
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Get a free quote and see how our BTM services can boost your
-              business.
-            </p>
           </div>
           <div className="mt-16">
             <LeadCaptureForm />

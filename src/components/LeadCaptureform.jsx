@@ -7,7 +7,6 @@ export default function LeadCaptureForm({ className = "" }) {
     firstName: "",
     lastName: "",
     email: "",
-    phone: "",
     message: "",
     source: window.location.pathname,
   });
@@ -17,7 +16,7 @@ export default function LeadCaptureForm({ className = "" }) {
     setStatus("loading");
 
     try {
-      const response = await fetch("/api/leads", {
+      const response = await fetch("https://mscbackend.vercel.app/api/leads", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -30,8 +29,8 @@ export default function LeadCaptureForm({ className = "" }) {
         firstName: "",
         lastName: "",
         email: "",
-        phone: "",
         message: "",
+        source: window.location.pathname,
       });
     } catch (error) {
       setStatus("error");
@@ -40,9 +39,7 @@ export default function LeadCaptureForm({ className = "" }) {
 
   return (
     <div className={`rounded-2xl bg-gray-50 p-8 ${className}`}>
-      <h3 className="mb-6 text-2xl font-bold">
-        Get Your Free HVAC Consultation
-      </h3>
+      <h3 className="mb-6 text-2xl font-bold">Get in touch!</h3>
       <form onSubmit={handleSubmit} className="grid gap-6">
         <div className="grid gap-6 sm:grid-cols-2">
           <input
@@ -93,7 +90,7 @@ export default function LeadCaptureForm({ className = "" }) {
         <button
           type="submit"
           disabled={status === "loading"}
-          className="rounded-lg bg-blue-600 px-8 py-4 font-semibold text-white transition-colors hover:bg-blue-500 disabled:opacity-50"
+          className="rounded-lg bg-primary px-8 py-4 font-semibold text-white transition-colors hover:bg-primary disabled:opacity-50"
         >
           {status === "loading" ? "Sending..." : "Get Free Consultation"}
         </button>

@@ -39,12 +39,13 @@ export default function Home() {
             {/* /* /* /* /* Main Hero Here */}
             <div className="mx-auto max-w-2xl text-center py-8 ">
               <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-10 bg-clip-text text-transparent bg-gradient-to-b from-primary to-[#1D354C] leading-normal pb-1">
-                Empower Your Business with Profitable Bitcoin ATM Leasing ⚡️
+                Empower Your Business with Flexible Bitcoin ATM Leasing ⚡️
                 <br />
               </h1>
               <p className="text-lg leading-8 text-gray-600 mb-14">
-                MetaSwap Capital simplifies crypto adoption, new revenue,
-                minimizes risk, and embrace the future of digital transactions.
+                Metaswap Capital simplifies crypto adoption, unlocks new
+                revenue, minimizes risk, and embraces the future of digital
+                finance.
               </p>
               <div className="flex gap-x-6 justify-center">
                 <Link
@@ -168,10 +169,10 @@ export default function Home() {
                     leasing solutions.
                   </p>
                 </div>
-                <div className="mt-8 md:mt-0">
+                <div className="mt-8 md:mt-0 text-center">
                   <Link
                     to="/contact"
-                    className="rounded-md bg-white px-6 py-3 text-lg font-semibold text-primary shadow-sm hover:bg-gray-100 transition-all"
+                    className="inline-block rounded-md bg-white px-8 py-3 text-lg font-semibold text-primary shadow-sm hover:bg-gray-100 transition-all"
                   >
                     Get Started Today
                   </Link>

@@ -12,7 +12,7 @@ export default function Contact() {
   const API_URL =
     process.env.NODE_ENV === "development"
       ? "http://localhost:3001/api/contact"
-      : "https://mintmainbackend.vercel.app/api/contact";
+      : "https://mscbackend.vercel.app/api/contact";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -41,15 +41,16 @@ export default function Contact() {
   };
 
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div className="isolate  bg-white px-6 py-24 sm:py-32 lg:px-8 ">
       <Toaster position="top-center" />
-      <div className="mx-auto max-w-2xl text-center">
+      <div className="mx-auto max-w-2xl text-center ">
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Contact Us
+          Let's Talk
         </h1>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          Start your journey with MetaSwap Capital and discover how our Bitcoin
-          ATM solutions can power new revenue for your business.
+          If you have any questions or need a quote, don’t hesitate to reach
+          out. Our dedicated Account Executives are here to assist you with
+          anything you need.
         </p>
       </div>
       <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
@@ -146,10 +147,56 @@ export default function Contact() {
           focus-visible:outline focus-visible:outline-2 
           focus-visible:outline-offset-2 focus-visible:outline-blue-600"
           >
-            Send Message
+            Submit
           </button>
         </div>
       </form>
+
+      <div className="text-left pt-20">
+        <p className="font-semibold">Metaswap Capital, Inc.</p>
+        <p className="font-normal text-gray-800">
+          333 S Hope St, 21st Floor, Los Angeles, CA 90071
+        </p>
+        <p className="font-normal text-gray-800">
+          Phone:{" "}
+          <a
+            href="tel:909-994-5730"
+            className="hover:text-primary text-blue-600"
+          >
+            909-994-5730
+          </a>
+        </p>
+        <p className="font-normal text-gray-800">
+          Fax:{" "}
+          <a
+            href="tel:909-994-5730"
+            className="hover:text-primary text-blue-600"
+          >
+            909-545-1560
+          </a>
+        </p>
+      </div>
+
+      <div className="bg-gray-800 rounded-2xl p-6 text-white mt-10">
+        <a
+          href="tel:909-994-5730"
+          className="font-semibold block hover:text-primary"
+        >
+          909-994-5730
+        </a>
+        <a
+          href="mailto:info@metaswapcap.com"
+          className="font-semibold block hover:text-primary"
+        >
+          info@metaswapcap.com
+        </a>
+
+        <div className="pt-5">
+          <p className="font-semibold">Metaswap Capital, Inc.</p>
+          <p className="font-semibold">333 S Hope St, 21st Floor</p>
+          <p className="font-semibold">Los Angeles, CA 90071</p>
+        </div>
+      </div>
     </div>
   );
 }
